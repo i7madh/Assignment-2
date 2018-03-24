@@ -1,0 +1,68 @@
+ body {
+ background-color: lightgray;
+ font-size: 24px;
+color : gray ;
+
+}
+
+.row {
+  margin:0 auto; /* this will center the page */
+   width:55%; /*  use your width here */
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+li {
+     float: left;
+      color: white;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+     text-decoration: none;
+}
+
+.active {
+    background-color: #4CAF50;
+      text-decoration: none;
+}
+img {
+   float: left;
+   margin: 4px;
+   padding: 1px;
+width: 100px ;
+height : 138px;
+border-style: dotted;
+border-width: 1px;
+
+}
+.number {
+  float: left;
+   color: gray;
+   font-size: 16px;
+  border-style: dashed;
+   border-width: 1px;
+}
+#show {
+  background-color: lightgray;
+  font-size: 16px;
+ color : black ;
+}
