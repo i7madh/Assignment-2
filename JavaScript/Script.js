@@ -4,9 +4,12 @@ var books = [
 {title:"World War Z: An Oral History of the Zombie War", pdate:2011 , review:23 , rate:4.1 , price:15 , img:"https://images.gr-assets.com/books/1386328204l/8908.jpg"},
 
 ]
-
+//show number of books
+var keys = Object.keys(books);
+var len = "<div class='books'>There is " + keys.length+" Available Books. </div>" ;
 displaybooks();
 
+//sorting functions
 function sortBydate() {
     books.sort(function(a, b){return a.pdate - b.pdate});
     displaybooks();
@@ -38,9 +41,10 @@ document.appendChild(x);
 }
 
 function displaybooks() {
+ //display
   document.getElementById("show").innerHTML =
-  "<img src="+books[0].img + "> <br><br> Title: " +books[0].title + "<br> Publicher Date: " + books[0].pdate + "<br> Reviews: " + books[0].review + " <br> Rate: " +books[0].rate +"<br> Price:" + books[0].price +"$<hr>" +
+  "<br> " + len + " <hr> <img src="+books[0].img + "> <br><br> Title: " +books[0].title + "<br> Publicher Date: " + books[0].pdate + "<br> Reviews: " + books[0].review + " <br> Rate: " +books[0].rate +"<br> Price:" + books[0].price +"$<hr>" +
   "<img src="+books[1].img + "> <br><br> Title: " +books[1].title + "<br> Publicher Date: " + books[1].pdate + "<br> Reviews: " + books[1].review + " <br> Rate: " +books[1].rate  +"<br> Price:" + books[1].price +"$<hr>" +
-   "<img src="+books[2].img + "> <br><br> Title: " +books[2].title + "<br> Publicher Date: " + books[2].pdate + "<br> Reviews: " + books[2].review + " <br> Rate: " +books[2].rate  +"<br> Price:" + books[2].price +"$<hr>" ;
+   "<img src="+books[2].img + "> <br><br> Title: " +books[2].title + "<br> Publicher Date: " + books[2].pdate + "<br> Reviews: " + books[2].review + " <br> Rate: " +books[2].rate  +"<br> Price:" + books[2].price +"$<hr>"  ;
    images(books);
 }
